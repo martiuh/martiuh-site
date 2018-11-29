@@ -1,24 +1,37 @@
-body {
-  /* fallback for old browsers */
-  background-color: lighten($color: darkblue, $amount: 60);
+@import "~../styles/_variables";
+$side-padding: 13vw;
+$tops-padding: 2vh;
+
+.content {
+  margin-top: 3px;
+  padding: 5px;
+  line-height: 25px;
+  font-size: 18px;
+  @media (min-width: $tablet) {
+    margin-top: 5px;
+    padding: $tops-padding $side-padding $tops-padding $side-padding;
+  }
 }
 
 .header {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: cornflowerblue;
+  background-color: black;
   margin-top: 10px;
   margin-right: 5vw;
   margin-left: 5vw;
   box-shadow: 0 0 10px 2px;
+  .tonatiuh h1 {
+    color: white;
+  }
 }
 
 .navbar {
   padding: 10px;
   a {
     color: white;
-    text-decoration: none;
     padding: 5px;
     font-size: 20px;
     @media (max-width: 500px) {
@@ -28,8 +41,8 @@ body {
 }
 
 .tonatiuh {
-  font-style: italic; 
+  font-style: italic;
   text-decoration: none;
   color: black;
-  
+
 }

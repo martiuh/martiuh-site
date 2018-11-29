@@ -1,0 +1,12 @@
+@import "~../styles/_variables";
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}

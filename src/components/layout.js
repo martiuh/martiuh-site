@@ -18,7 +18,7 @@ export default function Layout({ children }) {
             <h1>Tonatiuh González</h1>
           </Link>
         <nav className='navbar'>
-          <Link to='/projects'>Projects</Link> 
+          <Link to='/projects'>Projects</Link>
         </nav>
       </header>
       {children}
