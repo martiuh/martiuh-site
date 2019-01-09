@@ -1,12 +1,15 @@
 @import "~../styles/_variables";
 
 .projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 3vw;
+  padding: 0 2vw 0 2vw;
+
   @media (max-width: $tablet) {
-    flex-direction: column;
+    padding: inherit;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
   }
 }

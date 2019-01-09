@@ -1,20 +1,32 @@
 @import "~../styles/_variables";
 
-.project-card {
-  width: 400px;
-  height: 400px;
-  padding: 0 0.5vw 0 0.5vw;
-  @media (max-width: $tablet) {
-    width: 80vw;
-    height: 100%;
-  }
-}
-
 @mixin radius-mixin() {
   border-radius: 20px;
 }
+$square-size: 25vw;
 
-.project-thumb {
-  box-shadow: 0 0 10px 1px black;
-  @include radius-mixin();
+.project-card {
+  padding: 0 0.5vw 0 0.5vw;
+  text-align: center;
+  @media (max-width: $tablet) {
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
+
+  p {
+    height: 3vh;
+  }
+
+  .miniature-link {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+
+    .project-thumb {
+      box-shadow: 0 0 10px 3px black;
+      @include radius-mixin();
+    }
+  }
 }

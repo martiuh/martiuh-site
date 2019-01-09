@@ -20,7 +20,7 @@ export default () => (
                 path
                 thumb {
                   childImageSharp {
-                    sizes(maxWidth: 300) {
+                    sizes(maxWidth: 400) {
                      ...GatsbyImageSharpSizes
                     }
                   }

@@ -11,21 +11,25 @@ export default function ProjectCard({title, excerpt, thumb, path}) {
     <div className='project-card'>
       <Helmet title='Projects by Tonatiuh' />
       <h2>{title}</h2>
-        {thumb && thumb.childImageSharp && (
-        <Link to={path}>
-            <GatsbyImage
-              style={{
-                height: '200px'
-              }}
-              className='project-thumb'
-              sizes={thumb.childImageSharp.sizes}
-            />
-        </Link>
-        )}
       <p>{excerpt}</p>
-      <Link to={path}>
-        Ver
-      </Link>
+        {thumb && thumb.childImageSharp && (
+          <Link to={path} className='miniature-link'>
+              <GatsbyImage
+                style={{
+                  width: '80%',
+                  height: '100%',
+                  'object-position': 'center'
+                }}
+                className='project-thumb'
+                sizes={thumb.childImageSharp.sizes}
+              />
+          </Link>
+        )}
+      <p>
+        <Link to={path}>
+          Read More
+        </Link>
+      </p>
     </div>
   )
 }

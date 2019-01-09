@@ -19,6 +19,7 @@ export default function Layout({ children }) {
           </Link>
         <nav className='navbar'>
           <Link to='/projects'>Projects</Link>
+          <Link to='/about'>About</Link>
         </nav>
       </header>
       {children}
