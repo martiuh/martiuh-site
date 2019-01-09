@@ -1,8 +1,8 @@
 ---
   path: "/projects/reciclacv"
   title: "Recicla CV"
-  excerpt: "A simple gatsby sites for a recycling center in Guadalajara"
-  created: "June 2014"
+  excerpt: "Static site for a recycling center in Guadalajara"
+  created: "Jun 2014"
   thumb: "../images/reciclacv.jpg"
 
 ---

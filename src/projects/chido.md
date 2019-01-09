@@ -3,7 +3,7 @@
   title: "Chido"
   excerpt: "React base hybdrid site generator"
   created: "Dec 2018"
-  thumb: "../images/chatarrio.jpg"
+  thumb: "../images/chido.png"
 ---
 
 I build chido because I wanted to create cheap-hosting websites with dynamic and modern web technologies, it's thought to

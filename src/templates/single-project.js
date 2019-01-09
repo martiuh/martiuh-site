@@ -16,9 +16,6 @@ export default function Template({ data }) {
       <Helmet title={`${title}`} />
       <main className='content'>
         <h1>{title}</h1>
-        <div
-          dangerouslySetInnerHTML={{ __html: project.html }}
-        />
         {frontmatter.thumb && frontmatter.thumb.childImageSharp && (
           <Img
             style={{
@@ -28,6 +25,9 @@ export default function Template({ data }) {
             sizes={frontmatter.thumb.childImageSharp.sizes}
           />
         )}
+        <div
+          dangerouslySetInnerHTML={{ __html: project.html }}
+        />
         <Link to='/projects'>
           Back to projects
         </Link>
