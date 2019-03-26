@@ -2,8 +2,10 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import SEO from '../components/SEO'
 import ProjectCard from '../components/ProjectCard'
 import Layout from '../components/layout'
+
 import './projects.scss'
 
 export default () => (
@@ -33,6 +35,7 @@ export default () => (
     `}
     render={({ allMarkdownRemark: { edges } }) => (
       <Layout>
+        <SEO title="Projects" />
         <main className='projects'>
           {edges.map(({ node: { id, frontmatter } }) => (
             <ProjectCard
