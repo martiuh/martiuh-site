@@ -26,7 +26,7 @@ export default function ProjectCard({title, excerpt, thumb, path}) {
           </Link>
         )}
       <p>
-        <Link to={path}>
+        <Link to={path} className="project-card__read-more-link">
           Read More
         </Link>
       </p>

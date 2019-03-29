@@ -6,6 +6,7 @@
 $square-size: 25vw;
 
 .project-card {
+  display: grid;
   padding: 0 0.5vw 0 0.5vw;
   text-align: center;
   @media (max-width: $tablet) {
@@ -19,9 +20,10 @@ $square-size: 25vw;
   }
 
   .miniature-link {
+    place-self: center;
     display: flex;
     height: 200px;
-    width: 100%;
+    width: 300px;
     align-content: center;
     justify-content: center;
 
@@ -30,4 +32,9 @@ $square-size: 25vw;
       @include radius-mixin();
     }
   }
+}
+
+.project-card__read-more-link {
+  color: #ff57bf;
+  font-weight: bold;
 }

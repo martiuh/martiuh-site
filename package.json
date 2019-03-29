@@ -28,7 +28,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --port 3030",
     "start": "rimraf .cache/ public/ && npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "deploy": "npm run build && gh-pages -d public -b master -o gh-pages ",

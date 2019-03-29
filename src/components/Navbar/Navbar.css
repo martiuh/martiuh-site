@@ -1,17 +1,9 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  background: #000046; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #1cb5e0,
-    #000046
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #1bb4de,
-    #000046
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+  background-color: white;
+  border: 3px solid black;
 }
 
 .navbar a {
@@ -40,9 +32,9 @@
 }
 
 .navbar__top a {
+  color: black;
+  font-weight: bold;
   font-size: 22px;
-  color: white;
-  border: 5px solid transparent;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* text-shadow: 0px 2.5px 30px #ff006a, 0px -2.5px 30px #ff006a; */
 }
@@ -73,8 +65,7 @@
 }
 
 .navbar__bottom a {
-  color: #ff0597;
-  /* width: 9vh; */
+  color: black;
 }
 
 div.navbar__bottom a:focus:not(.navbar-item--active) {
@@ -85,4 +76,5 @@ div.navbar__bottom a:focus:not(.navbar-item--active) {
 
 .navbar__bottom .navbar-item--active {
   border-color: #ff0597;
+  color: #ff0597;
 }

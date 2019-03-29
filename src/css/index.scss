@@ -1,12 +1,14 @@
 main.index {
   display: grid;
   flex-direction: column;
+  grid-template-columns: 25vw;
+  grid-template-rows: auto;
   grid-template-areas:
     'featured featured featured featured'
     'about projects projects projects'
     'latest latest latest latest';
   grid-column-gap: 22px;
-  height: 200vh;
+  min-height: 200vh;
   grid-row-gap: 22px;
   margin: 10px;
 }
@@ -21,24 +23,44 @@ main.index {
   padding: 0.7em;
   box-shadow: 0 2px 15px 1px black;
   border-radius: 5px;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .grid-item--featured {
   background-color: darkgray;
   grid-area: featured;
+  height: 80vh;
 }
 
 .grid-item--about {
-  background-color: rgb(218, 218, 218);
+  background-color: black;
+  color: #ffffff;
   grid-area: about;
+
+  a {
+    font-weight: bold;
+    color: #e2e2e2;
+  }
+
+  a:hover {
+    color: #cecece;
+  }
 }
 
 .grid-item--projects {
-  background-color: rgb(226, 226, 226);
+  background-color: #e2e2e2;
   grid-area: projects;
+  justify-self: stretch;
+  
+  
 }
 
 .grid-item--latest {
   background-color: grey;
   grid-area: latest;
+}
+
+.has-text-justified {
+  text-align: justify;
 }

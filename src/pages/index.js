@@ -1,18 +1,16 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
 
+import '../css/index.scss'
+
+import ProjectsSection from '../components/ProjectsSection';
 import Layout from '../components/layout'
 import Image from '../components/image'
 
-import './index.scss'
-
 import SEO from '../components/SEO'
-import '../css/index.css'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
     <main className="index">
       <SEO title="martiuh.com" />
       <div
@@ -28,24 +26,17 @@ const IndexPage = () => (
       </div>
       <div className="grid-item grid-item--about">
         <h2>About me</h2>
+        <p>Self-taught front-end developer from 🇲🇽</p>
+        <Link to="/about-me">Find out more about me</Link>
       </div>
       <div className="grid-item grid-item--projects">
-        <h2>Projects</h2>
+        <ProjectsSection />
       </div>
       <div className="grid-item grid-item--latest">
         <h2>Latest</h2>
       </div>
     </main>
     <main className="content">
-      <section>
-        <h2>Who am I?</h2>
-        <p>
-          I'm a self-taught frontend developer who started coding back in 2014
-          when I decided that I didn't want to work as a criminologist (the
-          mayor that I just had finished back then) and instead want to make a
-          carreer or a living doing things with computers.
-        </p>
-      </section>
       <section>
         <h2>Projects</h2>
         <p>
